@@ -17,6 +17,10 @@ Route::get('/test', function () {
 Route::get(
     '/hello',
     function () {
-        return view("hello");
+
+        $name = "Ziad";
+        $books = ["PHP", "Flutter", "Web app"];
+        /// pass data by constructor   ---> data attribute
+        return view("hello", ["name" => $name, "books" => $books]);
     }
 );
