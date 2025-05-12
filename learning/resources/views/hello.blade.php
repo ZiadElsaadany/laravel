@@ -3,12 +3,12 @@ Test Route Class
 @php
 
 
-@endphp
+// @endphp
 
 {{$name}};
 
 @foreach ($books as $book ){
-    {{$book}};
+    // {{$book}}; 
 }
 
 @endforeach

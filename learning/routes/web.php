@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\TestController;
+use Illuminate\Notifications\Action;
 use Illuminate\Support\Facades\Route;
 
 ///view: global heloper method --> view: global functions
@@ -14,13 +16,25 @@ Route::get('/test', function () {
     return view('test');  /// route to welcome screen (firstly)
 });
 
+
+/////       execute method on testController
 Route::get(
     '/hello',
-    function () {
 
-        $name = "Ziad";
-        $books = ["PHP", "Flutter", "Web app"];
-        /// pass data by constructor   ---> data attribute
-        return view("hello", ["name" => $name, "books" => $books]);
-    }
+    /// TestController::class         ---------->    equal  path of file --> "App/Http/Controllers/TestController"
+    [
+        TestController::class,
+        'firstAction'
+    ]
+
+);
+Route::get(
+    '/welcometest',
+
+    /// TestController::class         ---------->    equal  path of file --> "App/Http/Controllers/TestController"
+    [
+        TestController::class,
+        'TestWelcome'
+    ]
+
 );
