@@ -53,3 +53,10 @@ Route::get(
 
     [PostController::class, "index"]
 );
+Route::get(
+    /// url parameter
+    '/posts/{post}',
+    [
+        PostController::class,"show"
+    ]
+);

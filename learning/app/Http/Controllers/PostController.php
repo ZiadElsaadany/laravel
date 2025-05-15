@@ -29,4 +29,10 @@ class PostController extends Controller
     }
 
 
+    public function show($postId)
+    {
+
+
+        return view("posts.show");
+    }
 }

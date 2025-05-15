@@ -28,61 +28,37 @@
 </nav>
 
 
-   <div class="text-center mt-4">
-    <br>
-    <div >
-<button type="button" class="btn btn-success">Create Post</button>
-   </div>
-    <br>
+  <div class="card" >
+  <div class="card-header">
+    Post Info
+  </div>
+  <div>
+    <h5 class="card-title mt-2">
+        Title: PHP
+    </h5 class="card-text">
+    <p> Description: description</p>
+  </div>
+</div>
+<br>
+  <div class="card" >
+  <div class="card-header">
+    Post Creator Info
+  </div>
+  <div>
+    <h5 class="card-title mt-2">
+        Name: PHP
+    </h5 class="card-text">
+    <p> Email: description</p>
+    <p> Created At: 15-5-2025</p>
+  </div>
 
-<div>
-    <table class="table mt-4">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Title</th>
-      <th scope="col">Post By</th>
-      <th scope="col">Created At</th>
-      <th scope="col">Actions</th>
-    </tr>
-  </thead>
-  <tbody>
+</div>
 
-    {{-- @dd($allPosts) --}}
 
-    @foreach ($allPosts as $post )
-       <tr>
-      <th scope="row">{{$post['id']}}</th>
-      <td>{{$post['title']}}</td>
-      <td>{{$post['postBy']}}</td>
-      <td>{{$post['createdAt']}}</td>
-      <td>
-        <button type="button" class="btn btn-primary">View</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-info">Info</button>
 
-      </td>
-    </tr>
-
-    @endforeach
-
-  </tbody>
-</table>
 </div>
 
    </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 
