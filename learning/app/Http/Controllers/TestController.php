@@ -8,8 +8,9 @@ class TestController extends Controller
 {
 
     //
-    public function testAction() {
-        return  "We Are In Test Action";
+    public function testAction()
+    {
+        return view("blogproject");
     }
 
 
