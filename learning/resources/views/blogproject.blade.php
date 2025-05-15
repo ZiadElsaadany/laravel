@@ -28,9 +28,9 @@
 </nav>
 
 
-   <div>
+   <div class="text-center mt-4">
     <br>
-    <div class="text-center mt-4">
+    <div >
 <button type="button" class="btn btn-success">Create Post</button>
    </div>
     <br>
