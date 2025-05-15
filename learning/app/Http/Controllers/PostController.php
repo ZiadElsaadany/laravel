@@ -25,7 +25,7 @@ class PostController extends Controller
                 'createdAt' => "15-5-2025",
             ]
         ];
-        return view("blogproject", ["allPosts" => $allPosts]);
+        return view("posts.blogproject", ["allPosts" => $allPosts]);
     }
 
 
