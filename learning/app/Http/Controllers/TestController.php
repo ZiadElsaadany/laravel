@@ -10,7 +10,22 @@ class TestController extends Controller
     //
     public function testAction()
     {
-        return view("blogproject");
+
+        $allPosts = [
+            [
+                'id' => 1,
+                'title' => "PHP",
+                'postBy' => "Mohsen",
+                'createdAt' => "15-5-2025",
+            ],
+            [
+                'id' => 2,
+                'title' => "Flutter",
+                'postBy' => "Ziad",
+                'createdAt' => "15-5-2025",
+            ]
+        ];
+        return view("blogproject", ["allPosts" => $allPosts]);
     }
 
 

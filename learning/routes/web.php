@@ -43,7 +43,7 @@ use Illuminate\Support\Facades\Route;
 
 
 //// Steps
-// desinfe route
+// Define route
 // Define controller that renders a view
 // Define view that contains list of posts
 // Remove any static html data from view
