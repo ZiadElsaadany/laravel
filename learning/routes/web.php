@@ -57,6 +57,15 @@ Route::get(
     /// url parameter
     '/posts/{post}',
     [
-        PostController::class,"show"
+        PostController::class,
+        "show"
+    ]
+);
+Route::get(
+    /// url parameter
+    '/posts/{post}',
+    [
+        PostController::class,
+        "show"
     ]
 );

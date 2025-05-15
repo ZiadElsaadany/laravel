@@ -32,7 +32,13 @@ class PostController extends Controller
     public function show($postId)
     {
 
+        $post = [
+            'id' => 1,
+            'title' => "PHP",
+            'postBy' => "Mohsen",
+            'createdAt' => "15-5-2025",
+        ];
 
-        return view("posts.show");
+        return view("posts.show", ["post" => $post]);
     }
 }

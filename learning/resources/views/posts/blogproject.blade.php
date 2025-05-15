@@ -54,12 +54,13 @@
        <tr>
       <th scope="row">{{$post['id']}}</th>
       <td>{{$post['title']}}</td>
+
       <td>{{$post['postBy']}}</td>
       <td>{{$post['createdAt']}}</td>
       <td>
-        <button type="button" class="btn btn-primary">View</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-info">Info</button>
+        <a href="/posts/{{$post['id']}}"   conte  type="button" class="btn btn-primary">View</button>
+<a type="button" class="btn btn-danger">Danger</button>
+<a type="button" class="btn btn-info">Info</button>
 
       </td>
     </tr>
