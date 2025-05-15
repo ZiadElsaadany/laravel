@@ -8,7 +8,7 @@ class TestController extends Controller
 {
 
     //
-    public function testAction()
+    public function index()
     {
 
         $allPosts = [

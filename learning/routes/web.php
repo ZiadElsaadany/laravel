@@ -49,7 +49,7 @@ use Illuminate\Support\Facades\Route;
 // Remove any static html data from view
 
 Route::get(
-    '/test',
+    '/posts',
 
-    [TestController::class, "testAction"]
+    [TestController::class, "index"]
 );
