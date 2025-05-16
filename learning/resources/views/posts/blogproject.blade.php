@@ -58,7 +58,11 @@
       <td>{{$post['postBy']}}</td>
       <td>{{$post['createdAt']}}</td>
       <td>
-        <a href="/posts/{{$post['id']}}"   conte  type="button" class="btn btn-primary">View</button>
+
+        {{-- href="/posts/{{$post['id']}}" --}}
+
+        {{-- shortcut name and parameter to routing  --}}
+        <a href="{{route('posts.show',parameters: $post['id'])}}"   conte  type="button" class="btn btn-primary">View</button>
 <a type="button" class="btn btn-danger">Danger</button>
 <a type="button" class="btn btn-info">Info</button>
 

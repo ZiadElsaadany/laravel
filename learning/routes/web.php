@@ -52,7 +52,10 @@ Route::get(
     '/posts',
 
     [PostController::class, "index"]
-);
+
+    // make shortcut named posts.index
+)->name("posts.index");
+
 Route::get(
     /// url parameter
     '/posts/{post}',
@@ -60,12 +63,6 @@ Route::get(
         PostController::class,
         "show"
     ]
-);
-Route::get(
-    /// url parameter
-    '/posts/{post}',
-    [
-        PostController::class,
-        "show"
-    ]
-);
+
+    /// shortcut named posts.show
+)->name(name: "posts.show");
