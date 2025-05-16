@@ -2,4 +2,4 @@
 
 <img src="images/laravel_learning.JPG" />
 <img src="images/image.png" />
-
+<img src="images/create_post.JPG" />
