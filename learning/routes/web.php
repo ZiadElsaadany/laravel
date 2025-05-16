@@ -66,3 +66,10 @@ Route::get(
 
     /// shortcut named posts.show
 )->name(name: "posts.show");
+Route::get(
+    '/posts',
+    [
+        PostController::class,
+        "create"
+    ]
+)->name('posts.create');

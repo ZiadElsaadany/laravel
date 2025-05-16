@@ -6,7 +6,7 @@ posts
  <div class="text-center mt-4">
     <br>
     <div >
-<button type="button" class="btn btn-success">Create Post</button>
+<a type="button" class="btn btn-success"  href="{{route('posts.create')}}">Create Post</a>
    </div>
     <br>
 
@@ -37,9 +37,9 @@ posts
         {{-- href="/posts/{{$post['id']}}" --}}
 
         {{-- shortcut name and parameter to routing  --}}
-        <a href="{{route('posts.show',parameters: $post['id'])}}"   conte  type="button" class="btn btn-primary">View</button>
-<a type="button" class="btn btn-danger">Delete</button>
-<a type="button" class="btn btn-info">Edit</button>
+        <a href="{{route('posts.show',parameters: $post['id'])}}"   conte  type="button" class="btn btn-primary">View</a>
+<a type="button" class="btn btn-danger">Delete</a>
+<a type="button" class="btn btn-info">Edit</a>
 
       </td>
     </tr>
