@@ -83,4 +83,17 @@ class PostController extends Controller
         $postCreator = $request->postCreator;
         return view('posts.edit');
     }
+     public function update($post)
+    {
+            $request = request();
+        $title = $request->title;
+        $desc = $request->description;
+        $postCreator = $request->postCreator;
+        // @dd($request->all());
+
+        // update data in database
+
+        //redirection to posts.show
+        return to_route('posts.show',$post);
+    }
 }

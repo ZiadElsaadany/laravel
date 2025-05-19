@@ -9,8 +9,10 @@ edit
  <!-- action: url to submit -->
   <!-- method: get or post -->
 <div class="d-flex justify-content-center">
-        <form method="" action=""  style="width: 800px;">
+    <!-- put/patch/delete ===> post in form  -->
+        <form method="POST" action="{{ route('posts.update',1) }}"  style="width: 800px;">
         @csrf  
+        @method('PUT') 
         <!-- @csrf:::  protection issue solution:: any form(POST Request) must contain @csrf -->
 
 

@@ -94,3 +94,13 @@ Route::get(
 
     /// shortcut named posts.show
 )->name(name: "posts.edit");
+Route::put(
+    /// url parameter
+ '/posts/{post}',
+    [
+        PostController::class,
+        "update"
+    ]
+
+    /// shortcut named posts.show
+)->name(name: "posts.update");
