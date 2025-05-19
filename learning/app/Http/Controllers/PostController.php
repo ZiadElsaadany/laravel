@@ -46,6 +46,6 @@ class PostController extends Controller
     {
 
 
-        return "test test";
+        return view("posts.create");
     }
 }

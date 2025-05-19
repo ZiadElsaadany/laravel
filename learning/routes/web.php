@@ -55,6 +55,14 @@ Route::get(
 
     // make shortcut named posts.index
 )->name("posts.index");
+Route::get(
+    '/posts/create',
+    [
+        PostController::class,
+        "create"
+    ]
+
+)->name('posts.create');
 
 Route::get(
     /// url parameter
@@ -66,10 +74,3 @@ Route::get(
 
     /// shortcut named posts.show
 )->name(name: "posts.show");
-Route::get(
-    '/posts',
-    [
-        PostController::class,
-        "create"
-    ]
-)->name('posts.create');
