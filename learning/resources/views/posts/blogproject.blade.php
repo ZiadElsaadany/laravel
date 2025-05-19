@@ -39,7 +39,7 @@ posts
         {{-- shortcut name and parameter to routing  --}}
         <a href="{{route('posts.show',parameters: $post['id'])}}"   conte  type="button" class="btn btn-primary">View</a>
 <a type="button" class="btn btn-danger">Delete</a>
-<a type="button" class="btn btn-info">Edit</a>
+<a type="button" class="btn btn-info" href="{{ route('posts.edit',$post['id']) }}">Edit</a>
 
       </td>
     </tr>

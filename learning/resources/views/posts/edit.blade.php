@@ -2,14 +2,14 @@
 @extends('layouts.app')
 @section('create')
 @section('title')
-create
+edit
  @endsection
 
 
  <!-- action: url to submit -->
   <!-- method: get or post -->
 <div class="d-flex justify-content-center">
-        <form method="POST" action="{{route('posts.store')}}"  style="width: 800px;">
+        <form method="" action=""  style="width: 800px;">
         @csrf  
         <!-- @csrf:::  protection issue solution:: any form(POST Request) must contain @csrf -->
 
@@ -49,7 +49,7 @@ create
    </div>
    <br>
    <div>
-    <button type="submit" class="btn btn-success">submit</button>
+    <button type="submit" class="btn btn-primary">edit</button>
    </div>
 </form>
 </div>

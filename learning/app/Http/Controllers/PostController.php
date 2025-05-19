@@ -52,7 +52,35 @@ class PostController extends Controller
     public function store()
     {
 
+        //1. get user data from form
 
-        return view("posts.store");
+        ///php
+        // $data=$_POST;
+        // // return $data;
+        
+        //laravel
+
+        $request = request();
+        $title = $request->title;
+        $desc = $request->description;
+        $postCreator = $request->postCreator;
+
+
+        //2. store the user data in database
+
+
+        //3. redirection to posts.index to show all posts
+        return to_route('posts.index');
+    }
+     public function edit($post)
+    {
+
+      
+
+        $request = request();
+        $title = $request->title;
+        $desc = $request->description;
+        $postCreator = $request->postCreator;
+        return view('posts.edit');
     }
 }
