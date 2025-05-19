@@ -74,3 +74,13 @@ Route::get(
 
     /// shortcut named posts.show
 )->name(name: "posts.show");
+Route::post(
+    /// url parameter
+    '/posts',
+    [
+        PostController::class,
+        "store"
+    ]
+
+    /// shortcut named posts.show
+)->name(name: "posts.store");
