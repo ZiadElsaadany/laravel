@@ -11,18 +11,25 @@ class PostController extends Controller
     public function index()
     {
 
+        // 1- create posts table (id, title(varChar), description(TEXT), created_at)
+        // 2- query: select * from posts
+
+        /// migrations :  version contorol for your database
+        // php artisan make:migration create_posts_table
+
+
         $allPosts = [
             [
                 'id' => 1,
                 'title' => "PHP",
-                'postBy' => "Mohsen",
-                'createdAt' => "15-5-2025",
+                'posted_by' => "Mohsen",
+                'created_at' => "15-5-2025",
             ],
             [
                 'id' => 2,
                 'title' => "Flutter",
-                'postBy' => "Ziad",
-                'createdAt' => "15-5-2025",
+                'posted_by' => "Ziad",
+                'created_at' => "15-5-2025",
             ]
         ];
         return view("posts.blogproject", ["allPosts" => $allPosts]);
@@ -35,8 +42,8 @@ class PostController extends Controller
         $post = [
             'id' => 1,
             'title' => "PHP",
-            'postBy' => "Mohsen",
-            'createdAt' => "15-5-2025",
+            'posted_by' => "Mohsen",
+            'created_at' => "15-5-2025",
         ];
 
         return view("posts.show", ["post" => $post]);

@@ -30,8 +30,8 @@ posts
       <th scope="row">{{$post['id']}}</th>
       <td>{{$post['title']}}</td>
 
-      <td>{{$post['postBy']}}</td>
-      <td>{{$post['createdAt']}}</td>
+      <td>{{$post['posted_by']}}</td>
+      <td>{{$post['created_at']}}</td>
       <td>
 
         {{-- href="/posts/{{$post['id']}}" --}}
