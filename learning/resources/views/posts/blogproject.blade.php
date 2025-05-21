@@ -38,7 +38,16 @@ posts
 
         {{-- shortcut name and parameter to routing  --}}
         <a href="{{route('posts.show',parameters: $post['id'])}}"   conte  type="button" class="btn btn-primary">View</a>
-<a type="button" class="btn btn-danger">Delete</a>
+
+           <form style="display: inline;" method="POST" action="{{ route('posts.destroy',parameters: $post['id']) }}" 
+           
+           onsubmit="return confirmDelete()"
+           >
+        @csrf  
+        @method('DELETE') 
+          <button type="submit" class="btn btn-danger">Delete</button>
+
+        </form>
 <a type="button" class="btn btn-info" href="{{ route('posts.edit',$post['id']) }}">Edit</a>
 
       </td>
@@ -51,5 +60,11 @@ posts
 </div>
 
    </div>
+   <!-- to show warning dialog when delete post from posts -->
+   <script>
+  function confirmDelete() {
+    return confirm("Are you sure you want to delete this post?");
+  }
+</script>
 
 @endsection

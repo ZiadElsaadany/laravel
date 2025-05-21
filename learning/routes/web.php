@@ -104,3 +104,13 @@ Route::put(
 
     /// shortcut named posts.show
 )->name(name: "posts.update");
+Route::delete(
+    /// url parameter
+ '/posts/{post}',
+    [
+        PostController::class,
+        "destroy"
+    ]
+
+    /// shortcut named posts.show
+)->name(name: "posts.destroy");
