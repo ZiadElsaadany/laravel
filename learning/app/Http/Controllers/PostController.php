@@ -105,3 +105,7 @@ class PostController extends Controller
         return to_route('posts.index');
     }
 }
+
+// database 
+// structure change for database (create table, edit column, remove column)
+// operations on database (insert record, edit record, delete record) 
